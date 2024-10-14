@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('blood_donation.png');
+            background-size: contain; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;">
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; max-width: 600px; margin: auto; border-radius: 10px;">
+        <h1>Blood Donation Registration</h1>
+        <form id="donationForm" action="process.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required min="18" max="69">
+
+            <label for="bloodType">Blood Type:</label>
+            <select id="bloodType" name="bloodType" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required pattern="\d{10}" title="Contact number must be exactly 10 digits.">
+
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Back to Home Button -->
+        <br>
+        <a href="home.html"><button type="button">Back to Home</button></a>
+        
+        <div id="response"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Home</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        /* Existing styles */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            display: inline-block;
+            width: 280px;
+            vertical-align: top;
+        }
+        .card h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+        .card p {
+            color: #333;
+            font-size: 16px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body style="background-image: url('image.jpeg');">
+    <div class="container">
+        <h1>Welcome to the Blood Donation System</h1>
+        <p>Your generous contribution helps save lives. Here’s how you can get involved:</p>
+        
+        <div class="buttons">
+            <a href="new.html" class="button">Register for Donation</a>
+			<a href="display.php" class="button">View Donor Details</a>
+			<a href="reciver.html" class="button">Receiver</a>
+            <a href="display_receiver.php" class="button">View Receiver Details</a>
+            <a href="hospitals.php" class="button">Hospital Details</a> <!-- New Button -->
+        </div>
+
+        <div class="card">
+            <h2>About Us</h2>
+            <p>We are dedicated to facilitating blood donations and ensuring a steady supply for hospitals. Learn more about our mission and values.</p>
+            <a href="about.html" class="button">Learn More</a>
+        </div>
+
+        <div class="card">
+            <h2>Why Donate Blood?</h2>
+            <p>Donating blood is a simple and selfless act that can save lives. Find out more about the benefits of blood donation and how it impacts patients.</p>
+            <a href="why_donate.html" class="button">Find Out More</a>
+        </div>
+
+        <div class="card">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, don’t hesitate to reach out. We're here to help you with your donation journey.</p>
+            <a href="contact.html" class="button">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>

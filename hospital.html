@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Blood Type Table</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your stylesheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital Blood Type Details</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>City</th>
+                    <th>Blood Types</th>
+                    <th>Blood Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>City Hospital</td>
+                    <td>101</td>
+                    <td>New York</td>
+                    <td>A+, O-</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>General Hospital</td>
+                    <td>102</td>
+                    <td>Los Angeles</td>
+                    <td>B+, AB+</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Community Health Center</td>
+                    <td>103</td>
+                    <td>Chicago</td>
+                    <td>O+, A-</td>
+                    <td>20</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

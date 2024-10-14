@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Receiver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('vector.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+    <div class="container">
+        <h1>Add New Receiver</h1>
+        <form id="receiverForm" action="receiver.php" method="post" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required pattern="\d{10}" title="Contact number must be exactly 10 digits.">
+
+            <label for="bloodType">Blood Type:</label>
+            <select id="bloodType" name="bloodType" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label for="hospitalLocation">Hospital Location:</label>
+            <input type="text" id="hospitalLocation" name="hospitalLocation" required placeholder="Enter hospital location">
+
+            <button type="submit">Add Receiver</button>
+        </form>
+        <br>
+        <a href="home.html"><button>Back to Home</button></a>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        function validateForm() {
+            var contact = document.getElementById("contact").value;
+            if (contact.length !== 10) {
+                alert("Contact number must be exactly 10 digits.");
+                return false; // Prevent form submission
+            }
+            return true; // Proceed to submit the form
+        }
+    </script>
+</body>
+</html>
